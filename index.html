@@ -2,46 +2,89 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="styles.css" />
+  <title>Results summary component</title>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Results summary component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
+  <div class="component">
+     
+    <div class="result">
+ 
+       
+        <h2 class="title">Your Result</h2>
+      
 
-  Your Result
-  76
-  of 100
+       <div class="number-container">
+        <span class="number">76</span>
+        <h5 class="small-number">of 100</h5>
+       </div>
 
-  Great
-  You scored higher than 65% of the people who have taken these tests.
-  
-  Summary
+       <div class="desc">
+        <h3 class="desc-title">Great</h3>
+        <p >
+          You scored higher than 65% of the people woh have taken these tests.
+        </p>
+       </div>
 
-  Reaction
-  80 / 100
 
-  Memory
-  92 / 100
 
-  Verbal
-  61 / 100
+    </div>
 
-  Visual
-  72 / 100
+    <div class="summary">
+   <h2 class="title">Summary </h2>
 
-  Continue
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+   <div class="spec">
+    <div style="display: flex;">
+      <img
+    src="./assets/images/icon-reaction.svg"
+    />
+    <h3 class="react">Reaction</h3>
+    </div>
+    <h3 class="percent">80 <span>/ 100</span></h3>
+   </div>
+
+   <div class="spec">
+    <div style="display: flex;">
+      <img
+    src="./assets/images/icon-memory.svg"
+    />
+    <h3 class="memo">Memory</h3>
+    </div>
+    <h3 class="percent">92 <span>/ 100</span></h3>
+   </div>
+
+
+   <div class="spec">
+    <div style="display: flex;">
+      <img
+    src="./assets/images/icon-verbal.svg"
+    />
+    <h3 class="verb">Verbal</h3>
+    </div>
+    <h3 class="percent">61 <span>/ 100</span></h3>
+   </div>
+
+
+   <div class="spec">
+    <div style="display: flex;">
+      <img
+    src="./assets/images/icon-visual.svg"
+    />
+    <h3 class="vis">Visual</h3>
+    </div>
+    <h3 class="percent">72 <span>/ 100</span></h3>
+   </div>
+
+   <button>Continue</button>
+
+    </div>
+
   </div>
+
+
+  
 </body>
 </html>
